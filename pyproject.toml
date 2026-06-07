@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argparse-toml"
+dynamic = ["version"]
+description = "Argparse with TOML config file defaults"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "Fr. Br. George", email = "frbrgeorge@gmail.com"},
+]
+dependencies = []
+
+[tool.setuptools.dynamic]
+version = {attr = "argparse_toml.__version__"}
+
+[tool.setuptools.package-dir]
+argparse_toml = "argparse_toml"
